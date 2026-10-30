@@ -1,0 +1,32 @@
+name: Publish CoA Nameplates v1.4.0 prerelease
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".release-nameplates-v1.4.0"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.event.head_commit.message == 'Trigger Nameplates v1.4.0 prerelease'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package and publish prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          zip -r CoA-Nameplates-v1.4.0-Custom-and-Summons.zip CoA_Nameplates CoA_Nameplates_Threat
+          cat > release-notes.md <<'EOF'
+          CoA Nameplates v1.4.0 — Custom Nameplates & Summons
+
+          Includes the complete CoA_Nameplates and CoA_Nameplates_Threat addon folders. Extract both into Interface/AddOns/.
+
+          This build has not been confirmed through in-game testing and is marked as a prerelease.
+          Maintainer: Uncle Bone — https://github.com/downingwow
+          EOF
+          gh release create v1.4.0 CoA-Nameplates-v1.4.0-Custom-and-Summons.zip --repo "$GITHUB_REPOSITORY" --title "CoA Nameplates v1.4.0 — Custom Nameplates & Summons" --target "$GITHUB_SHA" --prerelease --notes-file release-notes.md
