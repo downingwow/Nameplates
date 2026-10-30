@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<Include file="Libs\embeds.xml" />
+<Include file="CoA_NameplatesLocales.xml" />
+<Script file="CoA_NameplatesCustomStatusbar.lua"/>
+<Script file="CoA_NameplatesCore.lua"/>
+<Script file="CoA_NameplatesUtility.lua"/>
+<Script file="CoA_NameplatesDefaults.lua"/>
+<Script file="CoA_NameplatesPanel.lua"/>
+<Script file="CoA_NameplatesMinimapButton.lua"/>
+<Script file="CoA_NameplatesSpellCastMonitor.lua"/>
+<Include file="CoA_NameplatesWidgets.xml" />
+<Include file="CoA_NameplatesHub.xml" />
+</Ui>

@@ -1,0 +1,11 @@
+## X-Website: https://github.com/downingwow/Nameplates
+## X-Contact: https://github.com/downingwow
+## Interface: 30300
+## Title: CoA Nameplates - Engine
+## Notes: Standalone nameplates for Ascension Conquest of Azeroth / Conquest Reborn.
+## Author: Uncle Bone (maintainer); original authors credited in THIRD_PARTY_NOTICES.md
+## Version: 1.4.0
+## SavedVariables: TidyPlatesData, TidyPlatesHubTankCache, TidyPlatesHubDamageCache
+## SavedVariablesPerCharacter: TidyPlatesOptions, TidyPlatesHubTankSavedVariables, TidyPlatesHubDamageSavedVariables
+
+CoA_Nameplates.xml

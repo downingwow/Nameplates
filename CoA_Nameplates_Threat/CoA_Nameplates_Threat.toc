@@ -1,0 +1,21 @@
+## X-Website: https://github.com/downingwow/Nameplates
+## X-Contact: https://github.com/downingwow
+## Interface: 30300
+## Title: CoA Nameplates - Configuration
+## Notes: Standalone nameplates for Ascension Conquest of Azeroth / Conquest Reborn.
+## Notes-zhTW:創新的|cff89F559仇恨響應姓名板|r by|cff3079ffSuicidal Katt|r 漢化by|cff3079ffSamonyoge@狂熱之刃|r。
+## Notes-zhCN:创新的|cff89F559仇恨响应姓名板|r by|cff3079ffSuicidal Katt|r 汉化by|cff3079ff我的航海日志@耐奥祖|r。
+## Author: Uncle Bone (maintainer); original authors credited in THIRD_PARTY_NOTICES.md
+## RequiredDeps: CoA_Nameplates
+## SavedVariables: ThreatPlatesDB
+## Version: 1.4.0
+## OptionalDeps: LibSharedMedia-3.0, LibDualSpec-1.0
+
+Libs\embeds.xml
+Locales\locales.xml
+Core.lua
+Commands.lua
+Functions.lua
+Widgets.xml
+Options.lua
+Styles.xml
